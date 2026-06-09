@@ -1,0 +1,16 @@
+section { min-height: 100vh; padding: 100px 2rem 60px; max-width: 900px; margin: 0 auto; }
+.exp-timeline { position: relative; padding-left: 2rem; }
+.exp-timeline::before {
+  content: ''; position: absolute; left: 0; top: 8px; bottom: 0;
+  width: 1px; background: linear-gradient(to bottom, var(--accent), transparent);
+}
+.exp-item { position: relative; margin-bottom: 2.5rem; }
+.exp-item::before {
+  content: ''; position: absolute; left: -2.4rem; top: 6px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 10px var(--accent);
+}
+.exp-period { font-family: var(--mono); font-size: 11px; color: var(--accent3); letter-spacing: 0.08em; margin-bottom: 0.3rem; }
+.exp-role { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem; }
+.exp-company { font-size: 14px; color: var(--accent2); margin-bottom: 0.6rem; }
+.exp-desc { font-size: 14px; color: var(--text2); line-height: 1.7; }

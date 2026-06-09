@@ -1,0 +1,16 @@
+section { min-height: 100vh; padding: 100px 2rem 60px; max-width: 900px; margin: 0 auto; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.about-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.8rem;
+}
+.about-card.wide { grid-column: 1 / -1; }
+.about-card h3 { font-size: 13px; font-family: var(--mono); color: var(--accent2); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+.about-card p { font-size: 15px; color: var(--text2); line-height: 1.75; }
+.accent { color: var(--accent2); }
+.stat-row { display: flex; gap: 2rem; margin: 1rem 0; }
+.stat { text-align: center; }
+.stat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent2); }
+.stat .lbl { font-size: 11px; font-family: var(--mono); color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; }
+.extra { font-size: 13px; color: var(--text2); margin-top: 0.5rem; }
+@media (max-width: 600px) { .about-grid { grid-template-columns: 1fr; } .about-card.wide { grid-column: 1; } }

@@ -1,0 +1,15 @@
+<section id="skills">
+  <div class="section-header">
+    <div class="section-tag">// 02. habilidades</div>
+    <h2 class="section-title">Stack técnico</h2>
+    <span class="section-line"></span>
+  </div>
+  <div *ngFor="let cat of categories" class="skills-category">
+    <div class="cat-label">{{ cat.label }}</div>
+    <div class="skills-grid">
+      <div *ngFor="let skill of cat.skills" class="skill-pill" [class.featured]="skill.featured">
+        {{ skill.name }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,93 @@
+/* ===========================
+   PORTFOLIO - CARLOS FERNÁNDEZ BOU
+   Global styles
+   =========================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a0a0f;
+  --bg2: #111118;
+  --bg3: #16161f;
+  --accent: #6c63ff;
+  --accent2: #a78bfa;
+  --accent3: #38bdf8;
+  --text: #f0f0f8;
+  --text2: #9090b0;
+  --border: rgba(108,99,255,0.18);
+  --mono: 'DM Mono', monospace;
+  --sans: 'Space Grotesk', sans-serif;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; }
+
+/* Shared button styles */
+.btn-primary {
+  padding: 11px 24px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+.btn-outline {
+  padding: 11px 24px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text2);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-outline:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-1px); }
+
+/* Shared section header classes */
+.section-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent3);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.section-line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent3));
+  border-radius: 2px;
+  margin-top: 0.8rem;
+}
+.section-header { margin-bottom: 3rem; }
+
+/* Keyframes */
+@keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+@keyframes scrollPulse { 0%,100%{opacity:0.4} 50%{opacity:1} }

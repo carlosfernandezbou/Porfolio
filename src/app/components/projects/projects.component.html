@@ -1,0 +1,24 @@
+<section id="projects">
+  <div class="section-header">
+    <div class="section-tag">// 03. proyectos</div>
+    <h2 class="section-title">Lo que he construido</h2>
+    <span class="section-line"></span>
+  </div>
+  <div class="projects-list">
+    <div *ngFor="let p of projects" class="project-card">
+      <div class="project-header">
+        <div class="project-name">{{ p.emoji }} {{ p.name }}</div>
+        <div class="project-status" [class.status-wip]="p.status === 'wip'" [class.status-done]="p.status === 'done'">
+          {{ p.statusLabel }}
+        </div>
+      </div>
+      <p class="project-desc">{{ p.description }}</p>
+      <div class="project-tags">
+        <span *ngFor="let tag of p.tags" class="project-tag">{{ tag }}</span>
+      </div>
+      <div class="project-links">
+        <a [href]="p.githubUrl" target="_blank" class="project-link">↗ Ver en GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>

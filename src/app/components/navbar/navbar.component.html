@@ -1,0 +1,10 @@
+<nav>
+  <div class="nav-logo">carlosfb</div>
+  <div class="nav-links">
+    <a *ngFor="let link of links"
+       (click)="scrollToSection(link.id)"
+       [class.active]="activeSection === link.id">
+      {{ link.label }}
+    </a>
+  </div>
+</nav>

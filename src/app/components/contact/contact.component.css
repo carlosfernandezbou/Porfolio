@@ -1,0 +1,19 @@
+section { padding: 100px 2rem 60px; max-width: 900px; margin: 0 auto; }
+.contact-intro { color: var(--text2); font-size: 16px; margin-bottom: 2rem; max-width: 500px; line-height: 1.75; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.4rem;
+  display: flex; align-items: center; gap: 1rem;
+  text-decoration: none; transition: border-color 0.2s, transform 0.15s;
+}
+.contact-card:hover { border-color: rgba(108,99,255,0.4); transform: translateY(-2px); }
+.contact-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.label { font-size: 11px; font-family: var(--mono); color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; }
+.value { font-size: 14px; color: var(--text); font-weight: 500; margin-top: 2px; }
+@media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }

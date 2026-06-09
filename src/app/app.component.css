@@ -1,0 +1,14 @@
+.glow-orb {
+  position: fixed; border-radius: 50%; pointer-events: none; z-index: 0;
+  filter: blur(80px); opacity: 0.12;
+}
+.glow-1 { width: 500px; height: 500px; background: #6c63ff; top: -100px; right: -100px; }
+.glow-2 { width: 400px; height: 400px; background: #38bdf8; bottom: 10%; left: -100px; }
+.grid-bg {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(108,99,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108,99,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+main { position: relative; z-index: 1; }
