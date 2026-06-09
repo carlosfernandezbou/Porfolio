@@ -26,3 +26,16 @@ section { min-height: 100vh; padding: 100px 2rem 60px; max-width: 900px; margin:
 }
 .project-link { font-family: var(--mono); font-size: 12px; color: var(--text2); text-decoration: none; transition: color 0.2s; }
 .project-link:hover { color: var(--accent2); }
+
+.project-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+}

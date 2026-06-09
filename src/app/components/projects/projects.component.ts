@@ -27,7 +27,7 @@ export class ProjectsComponent {
       statusLabel: 'Casi terminado',
       description: 'Aplicación de gestión de GRC (Governance, Risk & Compliance). Permite a organizaciones gestionar sus procesos de gobernanza, evaluar riesgos y garantizar el cumplimiento normativo desde una plataforma centralizada e intuitiva.',
       tags: ['.NET', 'Angular', 'CosmosDB', 'Azure'],
-      githubUrl: 'https://github.com/carlosfernandezbou'
+      githubUrl: 'https://github.com/carlosfernandezbou/NorvexisGRC.git'
     },
     {
       name: 'CryptoBit',
@@ -36,7 +36,7 @@ export class ProjectsComponent {
       statusLabel: 'En progreso',
       description: 'Proyecto final de grado. Aplicación para visualizar monedas digitales que permite consultar precios y datos de criptomonedas en tiempo real, con funcionalidad de transferencias entre cuentas de Ethereum de prueba. Integración con la blockchain de Ethereum mediante wallets simuladas.',
       tags: ['Java', 'React', 'Spring Boot', 'MongoDB', 'Web3 / ETH'],
-      githubUrl: 'https://github.com/carlosfernandezbou'
+      githubUrl: 'https://github.com/carlosfernandezbou/CryptoBit.git'
     },
   ];
 }
