@@ -50,6 +50,7 @@ export class SkillsComponent {
     {
       label: 'Otros',
       skills: [
+        { name: 'Actico', featured: true },
         { name: 'Microsoft Office', featured: true },
       ]
     }
